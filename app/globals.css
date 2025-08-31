@@ -262,15 +262,7 @@ html {
   animation: pulse-glow 2s ease-in-out infinite;
 }
 
-/* Futuristic scan line effect */
-@keyframes scan-line {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100vw);
-  }
-}
+
 
 .scan-line {
   position: fixed;
