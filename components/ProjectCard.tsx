@@ -32,13 +32,13 @@ export function ProjectCard({ project, isHovered }: ProjectCardProps) {
         <ImageWithFallback
           src={project.image}
           alt={project.title}
-          className="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-110"
+          className="w-full h-64 sm:h-56 object-cover transition-transform duration-700 group-hover:scale-110"
         />
-        <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-500"></div>
-        <div className="absolute inset-0 bg-gradient-to-tr from-cyan-400/20 via-transparent to-blue-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div className="absolute inset-0 bg-black/40 sm:group-hover:bg-black/20 transition-all duration-500"></div>
+        <div className="absolute inset-0 bg-gradient-to-tr from-cyan-400/20 via-transparent to-blue-400/20 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-500"></div>
         
-        {/* Overlay action icons on hover */}
-        <div className="absolute inset-0 flex items-start justify-end p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        {/* Overlay action icons: pinned on small screens, hover on larger */}
+        <div className="absolute inset-0 flex items-start justify-end p-3 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300">
           <div className="flex gap-2">
             {project.live && (
               <a
@@ -66,17 +66,17 @@ export function ProjectCard({ project, isHovered }: ProjectCardProps) {
         </div>
       </div>
       
-      <div className="p-6 relative z-10">
-        <h3 className="text-xl text-white mb-3 group-hover:text-cyan-400 transition-colors duration-300 font-light">
+      <div className="p-7 sm:p-6 relative z-10">
+        <h3 className="text-2xl text-white mb-3 group-hover:text-cyan-400 transition-colors duration-300 font-light">
           {project.title}
         </h3>
-        <p className="text-white/70 mb-4 leading-relaxed" style={{ display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{project.description}</p>
+        <p className="text-base text-white/70 mb-4 leading-relaxed" style={{ display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{project.description}</p>
         
         <div className="flex flex-wrap gap-2 mb-2">
           {project.tech.map((tech) => (
             <span 
               key={tech}
-              className="px-2.5 py-1 bg-white/10 text-white/80 rounded-lg text-xs backdrop-blur-sm border border-white/10 hover:border-cyan-400/30 hover:text-cyan-400 transition-all duration-300"
+              className="px-2.5 py-1 bg-white/10 text-white/80 rounded-lg text-sm backdrop-blur-sm border border-white/10 hover:border-cyan-400/30 hover:text-cyan-400 transition-all duration-300"
             >
               {tech}
             </span>

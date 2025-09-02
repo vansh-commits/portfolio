@@ -52,7 +52,7 @@ export function Hero() {
   const parallaxY = mousePosition.y * 20;
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center px-8 relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center justify-center px-5 sm:px-8 relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div 
@@ -92,41 +92,41 @@ export function Hero() {
           opacity: fadeOpacity
         }}
       >
-        <GlassCard className="p-20 text-center border-white/10 backdrop-blur-xl relative overflow-hidden group">
+        <GlassCard className="p-8 sm:p-10 md:p-16 lg:p-20 text-center border-white/10 backdrop-blur-xl relative overflow-hidden group">
           {/* Gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></div>
           
           <div className="relative z-10">
-            <div className="flex items-center justify-center mb-8">
-              <Sparkles className="w-8 h-8 text-cyan-400 mr-4 animate-spin" />
-              <span className="text-cyan-400/80 uppercase tracking-widest text-sm font-medium">Full Stack Developer</span>
-              <Sparkles className="w-8 h-8 text-cyan-400 ml-4 animate-spin" />
+            <div className="flex items-center justify-center mb-5 sm:mb-8">
+              <Sparkles className="w-6 h-6 sm:w-8 sm:h-8 text-cyan-400 mr-2 sm:mr-4 animate-spin" />
+              <span className="text-cyan-400/80 uppercase tracking-widest text-sm sm:text-sm font-medium">Full Stack Developer</span>
+              <Sparkles className="w-6 h-6 sm:w-8 sm:h-8 text-cyan-400 ml-2 sm:ml-4 animate-spin" />
             </div>
             
-            <h1 className="text-9xl font-thin text-white mb-8 tracking-tight bg-gradient-to-r from-white via-gray-100 to-white bg-clip-text text-transparent">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-9xl font-thin text-white mb-5 sm:mb-8 tracking-tight bg-gradient-to-r from-white via-gray-100 to-white bg-clip-text text-transparent">
               Vansh Malhotra
             </h1>
             
-            <div className="w-32 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-transparent mx-auto mb-8 opacity-80"></div>
+            <div className="w-28 sm:w-32 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-transparent mx-auto mb-5 sm:mb-8 opacity-80"></div>
             
-            <p className="text-3xl text-white/80 mb-12 leading-relaxed max-w-3xl mx-auto font-light">
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white/80 mb-8 sm:mb-12 leading-relaxed max-w-3xl mx-auto font-light px-1">
               Building tomorrow's web, today. Crafting <span className="text-cyan-400 font-medium">immersive digital experiences</span> 
               that blur the line between imagination and reality.
             </p>
             
-            <div className="flex justify-center space-x-8">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:space-x-8">
               <button 
-                className="group px-10 py-5 bg-gradient-to-r from-cyan-400/20 to-blue-400/20 hover:from-cyan-400/30 hover:to-blue-400/30 text-white rounded-2xl transition-all duration-500 backdrop-blur-sm border border-cyan-400/30 hover:border-cyan-400/50 hover:scale-105 hover:shadow-xl hover:shadow-cyan-400/20"
+                className="group px-8 py-4 sm:px-10 sm:py-5 bg-gradient-to-r from-cyan-400/20 to-blue-400/20 hover:from-cyan-400/30 hover:to-blue-400/30 text-white rounded-2xl transition-all duration-500 backdrop-blur-sm border border-cyan-400/30 hover:border-cyan-400/50 hover:scale-105 hover:shadow-xl hover:shadow-cyan-400/20 w-full sm:w-auto"
                 onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                <span className="text-lg font-medium">Explore Work</span>
+                <span className="text-lg sm:text-lg font-medium">Explore Work</span>
                 <div className="w-full h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-transparent mt-2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
               </button>
               <button 
-                className="group px-10 py-5 bg-transparent hover:bg-white/10 text-white rounded-2xl transition-all duration-500 border border-white/20 hover:border-white/40 hover:scale-105"
+                className="group px-8 py-4 sm:px-10 sm:py-5 bg-transparent hover:bg-white/10 text-white rounded-2xl transition-all duration-500 border border-white/20 hover:border-white/40 hover:scale-105 w-full sm:w-auto"
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                <span className="text-lg font-medium">Let's Connect</span>
+                <span className="text-lg sm:text-lg font-medium">Let's Connect</span>
                 <div className="w-full h-0.5 bg-gradient-to-r from-transparent via-white to-transparent mt-2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
               </button>
             </div>
@@ -135,10 +135,10 @@ export function Hero() {
       </div>
       
       {/* Enhanced scroll indicator */}
-      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-6 sm:bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="flex flex-col items-center space-y-2">
-          <ArrowDown className="w-6 h-6 text-white/60" />
-          <div className="w-0.5 h-12 bg-gradient-to-b from-white/60 to-transparent rounded-full"></div>
+          <ArrowDown className="w-5 h-5 sm:w-6 sm:h-6 text-white/60" />
+          <div className="w-0.5 h-8 sm:h-12 bg-gradient-to-b from-white/60 to-transparent rounded-full"></div>
         </div>
       </div>
     </section>
