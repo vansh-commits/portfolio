@@ -1,7 +1,7 @@
 
-# PortfolioF
+# Portfolio
 
-PortfolioF is a modern, responsive portfolio website built with Next.js and TypeScript. It showcases your projects, skills, and contact information in a clean and professional layout.
+Portfolio is a modern, responsive portfolio website built with Next.js and TypeScript. It showcases your projects, skills, and contact information in a clean and professional layout.
 
 ## Features
 
