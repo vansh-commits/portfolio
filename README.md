@@ -38,7 +38,6 @@ Portfolio is a modern, responsive portfolio website built with Next.js and TypeS
 
 ```bash
 npm run dev
-# or
 
 ```
 
