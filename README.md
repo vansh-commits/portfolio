@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+# PortfolioF
+
+PortfolioF is a modern, responsive portfolio website built with Next.js and TypeScript. It showcases your projects, skills, and contact information in a clean and professional layout.
+
+## Features
+
+- Built with [Next.js](https://nextjs.org/) and [TypeScript](https://www.typescriptlang.org/)
+- Modular component structure for easy customization
+- Responsive design for all devices
+- Project showcase section
+- About, Contact, and Tech Stack sections
+- Custom UI components
+- Easily configurable via constants and data files
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js (v18 or higher recommended)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+	```bash
+	git clone https://github.com/vansh-commits/portfolio.git
+	cd portfoliof
+	```
+2. Install dependencies:
+	```bash
+	npm install
+	# or
+	yarn install
+	```
+3. Create a `.env` file in the root directory and add any required environment variables.
+
+### Running the Development Server
 
 ```bash
 npm run dev
 # or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `app/` - Main application pages and API routes
+- `components/` - Reusable React components and UI elements
+- `data/` - Static data used throughout the site
+- `hooks/` - Custom React hooks
+- `lib/` - Utility functions
+- `public/` - Static assets (images, etc.)
 
-## Learn More
+## Customization
 
-To learn more about Next.js, take a look at the following resources:
+- Update your personal information, projects, and tech stack in the relevant files under `components/constants/` and `data/`.
+- Modify or add new components in the `components/` directory.
+- Update styles in `app/globals.css`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+You can deploy this project to platforms like [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com/).
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
