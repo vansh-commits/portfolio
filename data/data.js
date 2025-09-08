@@ -2,7 +2,7 @@ export const personalInfo = {
   name: "Vansh Malhotra",
   title: "Full Stack Developer",
   phone: "+91-9310062968",
-  email: "malhotravansh439@gmail.com",
+  email: "maalik@themalhotra.co.in",
   linkedin: "https://linkedin.com/in/malhotra-vansh",
   github: "https://github.com/vansh-commits",
   twitter: "https://x.com/malhotra439",
