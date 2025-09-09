@@ -16,7 +16,7 @@ export const education = [
   },
   {
     institution: "BITS Pilani",
-    degree: "Bachelors & Masters, Computer Science",
+    degree: "Bachelors, Computer Science",
     duration: "Aug 2024 – July 2027",
   },
 ]
