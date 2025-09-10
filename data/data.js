@@ -5,7 +5,7 @@ export const personalInfo = {
   email: "maalik@themalhotra.co.in",
   linkedin: "https://linkedin.com/in/malhotra-vansh",
   github: "https://github.com/vansh-commits",
-  twitter: "https://x.com/malhotra439",
+  twitter: "https://x.com/vansh_commits",
 }
 
 export const education = [
